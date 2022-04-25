@@ -28,7 +28,7 @@ export function isStorageAvailable(type) {
 
 // Book add and remove
 
-const bookList = document.querySelector(".book-list");
+export const bookList = document.querySelector(".book-list");
 
 // Create classes
 export default class Bookshelf {
@@ -50,8 +50,8 @@ export default class Bookshelf {
     }
   }
 
-  remove(id) {
-    this.books = this.books.filter((book) => book.id !== parseInt(id, 10));
+  remove(index) {
+    this.books = this.books.filter((b) => b.id !== index);
     localStorage.setItem("bookList", JSON.stringify(this.books));
     this.updateBookList();
   }
@@ -67,7 +67,6 @@ export default class Bookshelf {
     });
   }
 }
-
 export const remove = (id) => {
   newbook.remove(id);
 };

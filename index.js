@@ -14,7 +14,6 @@ setInterval(() => {
 const title = document.querySelector("#book-title");
 const author = document.querySelector("#book-author");
 const form = document.querySelector("#form-add-book");
-const bookList = document.querySelector(".book-list");
 
 // Create a variable to contain local data
 let books = [];
