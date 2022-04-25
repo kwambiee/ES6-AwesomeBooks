@@ -42,6 +42,12 @@ form.onsubmit = () => {
 // Don't forget to call the function when the page loads as well
 newbook.updateBookList();
 
+// eslint-disable-next-line no-unused-vars
+const remove = (id) => {
+  newbook.remove(id);
+};
+window.remove = remove;
+
 // Single page navigation
 const allBooks = document.querySelector('.all-books');
 const addBook = document.querySelector('.add-book');

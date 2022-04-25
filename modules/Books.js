@@ -50,8 +50,8 @@ export default class Bookshelf {
     }
   }
 
-  remove(index) {
-    this.books = this.books.filter((b) => b.id !== index);
+  remove(id) {
+    this.books = this.books.filter((book) => book.id !== parseInt(id, 10));
     localStorage.setItem('bookList', JSON.stringify(this.books));
     this.updateBookList();
   }
