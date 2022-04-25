@@ -67,6 +67,3 @@ export default class Bookshelf {
     });
   }
 }
-export const remove = (id) => {
-  newbook.remove(id);
-};
