@@ -14,6 +14,9 @@ This project creates a book collection webpage where one keys in the book title 
 - Refactor your methods and functions to arrow functions.
 - Use let and const in a correct way.
 
+# Live Demo
+[See my Project Live](https://kwambiee.github.io/ES6-AwesomeBooks/)
+
 ## Getting Started
 
 **Just fork it and fell free to use it.**
